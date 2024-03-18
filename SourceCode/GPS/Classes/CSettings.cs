@@ -153,7 +153,7 @@ namespace AgOpenGPS
             try
             {
                 using (StreamReader xmlFile = new StreamReader(settingsFilePath))
-                using (var output = new StreamWriter("Output999.xml"))
+                using (var output = new StreamWriter("C:\\temp\\Output999.xml"))
 
                 {
                     string line;
@@ -194,7 +194,7 @@ namespace AgOpenGPS
                             }
                             else output.WriteLine(line);
                         }
-                        settingsFilePath = "Output999.xml";
+                        settingsFilePath = "C:\\temp\\Output999.xml";
                         output.Close();
                     }
                     else
